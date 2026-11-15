@@ -13,10 +13,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack() {
+            VStack(alignment: .leading) {
                 
                 TitleView(text: "Greetings", headline: "Explore IOS Programming")
-                    .padding()
                 
                 Spacer()
                 
@@ -26,6 +25,7 @@ struct ContentView: View {
                 Spacer()
                 
             }
+            .padding()
         }
     }
 }
