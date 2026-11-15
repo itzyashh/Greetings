@@ -7,15 +7,26 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            BackgroundView()
+            VStack() {
+                
+                TitleView(text: "Greetings", headline: "Explore IOS Programming")
+                    .padding()
+                
+                Spacer()
+                
+                MessagesView()
+                
+                Spacer()
+                Spacer()
+                
+            }
         }
-        .padding()
     }
 }
 
