@@ -30,8 +30,8 @@
 		D36D274730A9ECFA00A66292 = {
 			isa = PBXGroup;
 			children = (
-				D36D275230A9ECFA00A66292 /* Greetings */,
 				D36D275130A9ECFA00A66292 /* Products */,
+				D36D275230A9ECFA00A66292 /* Greetings */,
 			);
 			sourceTree = "<group>";
 		};

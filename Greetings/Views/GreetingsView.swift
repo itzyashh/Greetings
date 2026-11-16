@@ -8,15 +8,14 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct GreetingsView: View {
     
     var body: some View {
         ZStack {
             BackgroundView()
             VStack(alignment: .leading) {
                 
-                TitleView(text: "Greetings", headline: "Explore IOS Programming")
-                
+                TitleView()
                 Spacer()
                 
                 MessagesView()
@@ -31,5 +30,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    GreetingsView()
 }
