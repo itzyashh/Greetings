@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+/// This is the background view which contains linear gradient
+
 struct BackgroundView: View {
     var body: some View {
         LinearGradient(

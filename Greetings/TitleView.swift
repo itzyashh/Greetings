@@ -7,12 +7,14 @@
 
 import SwiftUI
 
+/// This is the title view of the app which is standalone and has no parameters, has title, headline and ring on right side
+
 struct TitleView: View {
     
     let text: String
-    @State var headline: String
+    @State var headline: LocalizedStringKey
     
-    let headlines: [String] = [
+    let headlines: [LocalizedStringKey] = [
         "Build amazing apps with SwiftUI",
         "Master concurrency with async/await",
         "Design beautiful interfaces for iOS",
@@ -25,7 +27,7 @@ struct TitleView: View {
         "Optimize performance and memory usage"
     ]
     
-    let defaultValue = "Explore IOS Programming"
+    let defaultValue: LocalizedStringKey = "Explore IOS Programming"
     
     let circleDia = 70.0
     let lineWidth = 15.0
