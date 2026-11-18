@@ -7,7 +7,21 @@
 
 import SwiftUI
 
+
 struct TextView: View {
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    
+    
+    var  isIpad: Bool {
+        horizontalSizeClass == .regular && verticalSizeClass == .regular
+
+    }
+    
+    var font: Font {
+        isIpad ? .largeTitle : .body
+    }
     
     let text: LocalizedStringKey
     @State var color: Color
@@ -22,7 +36,7 @@ struct TextView: View {
     
     var body: some View {
         Text(text)
-            .font(.largeTitle)
+            .font(font)
             .fontWeight(.semibold)
             .padding()
             .background(color)
