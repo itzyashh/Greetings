@@ -7,11 +7,19 @@
 
 import SwiftUI
 
+
 @main
 struct GreetingsApp: App {
+    
+    @State private var language: String = "en"
+    @State private var layoutlanguageString: String = "en"
+
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(
+                language: $language,
+                layoutDirectionString: $layoutlanguageString
+            )
         }
     }
 }

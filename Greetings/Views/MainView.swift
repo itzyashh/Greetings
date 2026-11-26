@@ -23,9 +23,22 @@ struct MainView: View {
 
     }
     
+    @Binding var language: String
+    @Binding var layoutDirectionString: String
+
+    
+    
+    
     var body: some View {
         if isPortrainPhone || isIpad {
-            GreetingsView()
+            NavigationStack {
+                GreetingsView()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            LanguageOptionsView(language: $language, layoutDirectionString: $layoutDirectionString)
+                        }
+                    }
+            }
         } else {
             LandscapeGreetingsView()
         }
@@ -33,5 +46,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView()
+    MainView(language: .constant("en"), layoutDirectionString: .constant(LEFT_TO_RIGHT))
 }

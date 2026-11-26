@@ -30,6 +30,9 @@
         }
       }
     },
+    "Arabic" : {
+
+    },
     "Build amazing apps with SwiftUI" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -116,6 +119,9 @@
           }
         }
       }
+    },
+    "English" : {
+
     },
     "Explore Combine and reactive patterns" : {
       "extractionState" : "manual",
@@ -204,6 +210,9 @@
         }
       }
     },
+    "Hebrew" : {
+
+    },
     "Hello World" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -261,6 +270,9 @@
           }
         }
       }
+    },
+    "Hindi" : {
+
     },
     "Level up with Swift package management" : {
       "extractionState" : "manual",
@@ -435,6 +447,9 @@
           }
         }
       }
+    },
+    "Spanish" : {
+
     }
   },
   "version" : "1.3"
